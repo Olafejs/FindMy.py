@@ -114,9 +114,8 @@ method = next(item for item in methods if isinstance(item, SyncSecurityKeySecond
 state = method.authenticate(signer)
 ```
 
-The signer can use a browser, platform authenticator or another WebAuthn frontend. The optional
-Linux USB example under `examples/security_key` shows an adapter for `python-fido2`.
-`python-fido2` is not a runtime dependency of FindMy.py.
+The application supplies the signer using a browser, platform authenticator or another WebAuthn
+frontend. FindMy.py does not bundle an authenticator adapter or require `python-fido2`.
 
 If all went well, you should now be logged in!
 

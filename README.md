@@ -58,9 +58,9 @@ pip install findmy
 
 For usage examples, see the [examples](examples) directory.
 For accounts protected by hardware security keys, FindMy exposes native HSA2
-second-factor objects; see the optional Linux
-[FIDO2/WebAuthn USB example](examples/security_key/README.md). The core API accepts
-a dependency-free signer callback, so ordinary library users do not need `python-fido2`.
+second-factor objects through a dependency-free signer callback. See the
+[account authentication documentation](docs/getstarted/01-account.md) for the API.
+The application supplies its own WebAuthn frontend; FindMy has no FIDO2 runtime dependency.
 We are also building out a CLI. Try `python -m findmy` to see the current state of it.
 Documentation can be found [here](http://docs.mikealmel.ooo/FindMy.py/).
 
